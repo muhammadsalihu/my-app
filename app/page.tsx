@@ -1,113 +1,94 @@
-import Image from "next/image";
-
+import Link from 'next/link'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-         Airbills Digital Solutions&nbsp;
-          <code className="font-mono font-bold">UK Limited</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.jpg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="bg-neutral-800 w-full ">
+        <p>Productize Yourself</p>
+      </div>
+
+      <nav className="bg-[#0A2540] p-4  w-full">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white text-lg font-bold">
+          Airbills Digital
+        </div>
+        <div className="flex space-x-4">
+          <Link href="/" className="text-white hover:text-[#FF6F00]">Home</Link>
+          <Link href="/about" className="text-white hover:text-[#FF6F00]">About</Link>
+          <Link href="/services" className="text-white hover:text-[#FF6F00]">Services</Link>
+          <Link href="/contact" className="text-white hover:text-[#FF6F00]">Contact</Link>
         </div>
       </div>
+    </nav>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/vercel.jpg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      
+    <section className="bg-dark-navy text-white py-20 w-full">
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-4">We build digital experiences that resonate</h1>
+        <p className="mb-8">Lets create something amazing together.</p>
+        <div className="flex justify-center space-x-4">
+          <a href="#start-project" className="bg-white text-dark-navy px-4 py-2 rounded shadow hover:bg-accent-orange hover:text-white transition duration-300">Start a Project</a>
+          <a href="#hire-talent" className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-accent-orange hover:border-accent-orange transition duration-300">Hire Talent</a>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-gray-100 py-20">
+      <div className="container mx-auto text-center px-4">
+        <h2 className="text-3xl font-bold mb-4 text-[#0A2540]">About Airbills Digital</h2>
+        
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold mb-4 text-[#0A2540]">Our Mission</h3>
+          <p className="text-lg text-[#0A2540]">
+            Airbills Digital is committed to building digital experiences that resonate with users and provide real value. We strive to innovate and deliver top-notch IT services tailored to the unique needs of our clients.
+          </p>
+        </div>
+        
+        <div>
+          <h3 className="text-2xl font-semibold mb-4 text-[#0A2540]">Our Team</h3>
+          <p className="text-lg text-[#0A2540] mb-4">
+            Our team is composed of skilled professionals with diverse backgrounds in IT, design, and development. We are passionate about leveraging technology to create impactful digital solutions.
+          </p>
+          <p className="text-lg text-[#0A2540]">
+            Based in Abuja, Nigeria, we encourage in-person visits during business hours. We are always ready to discuss how we can help you achieve your business goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+      <h1>Formula Airbills</h1>
+
+      <div>
+        <p>Nav Bar Section</p>
+      </div>
+      
+      <div>
+        <p>Hero Section</p>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Home{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            THis is the Landing Page for Airbills Digital Solutions and all its subsidiaries. 
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            About{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Airbills Digital Solutions is a Design Agency with focus on Company Branding, UI/UX Design and Frontend Development. We also have three internal products that we sell which are: Janks Autos, Umnafass Gifts and Formula Airbills. Two of these are Physical Products and the Last is a Digital Product with a Mobile App.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Blog{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Implement Million Dollar Weekend Content and sales Strategy
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Portfolio{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Case Studies and Testimonials
-          </p>
-        </a>
+      <div>
+        <p>About Section</p>
       </div>
-    </main>
+
+      <div>
+        <p>Success Stories Section</p>
+      </div>
+
+      <div>
+        <p>Contact Us Section</p>
+      </div>
+
+      <div>
+        <p>Connect with Us Section</p>
+      </div>
+
+    
+      <div>
+        <p>Footer Section</p>
+      </div>
+
+    
+
+   </main>
   );
 }
