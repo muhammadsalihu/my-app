@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -51,6 +54,57 @@ export default function Home() {
           <p className="text-lg text-[#0A2540]">
             Based in Abuja, Nigeria, we encourage in-person visits during business hours. We are always ready to discuss how we can help you achieve your business goals.
           </p>
+        </div>
+        
+        <div>
+          <h3 className="text-2xl font-semibold mb-4 text-[#0A2540]">Our Services</h3>
+          <p className="text-lg text-[#0A2540] mb-4">
+          At Airbills Digital, we offer a wide range of IT services to meet the needs of small businesses. From UI/UX Design and Frontend Development to LLM Development.
+          </p>
+          <p className="text-lg text-[#0A2540]">
+          we have the expertise to help you achieve your goals and keep your business running smoothly
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section className='p-20 w-full'>
+      <div className='container '>
+        <h2 className='text-3xl font-bold mb-12 text-center'>Contact Us</h2>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+
+            <h3 className='text-2xl mb-2'>Better yet, see us in person</h3>
+            <p className='mb-6'>We love our customers, so feel free to visit during normal business hours.</p>
+
+            <h3 className='text-2xl mb-2'>Airbills Digital</h3>
+            <p className='mb-6'>Suite B8, 2XL Mall, Beside Zenith Bank, Und St. Gwarinpa 3rd Avenue.</p>
+            <p className='mb-6'>Abuja, Nigeria.</p>
+            <p className='mb-6'>Call us at <span className='text-custom-red'>+2348079454558</span></p>
+            <p className='mb-6'>Send us an email at <span className='text-custom-red'>hello@airbills.xyz</span></p>
+
+            {/* Better yet, see us in person!
+We love our customers, so feel free to visit during normal business hours.
+
+
+Suite B8, 2XL Mall, Beside Zenith Bank, Und St. Gwarinpa 3rd Avenue.
+
+Abuja, Nigeria
+
+
+
+Send us an email at hello@airbills.xyz */}
+          </div>
+         
+          <div>
+            <Image 
+              src='/images/ads-bikes.png'
+              alt="Airbills Digital Bikes"
+              width={500}
+              height = {300}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -12,6 +12,7 @@ const config: Config = {
         'dark-navy': '#0A2540',
         'accent-orange': '#FF6F00',
         'light-gray': '#F5F5F5',
+        'custom-red': '#EB144C',
       },
     },
   },
