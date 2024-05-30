@@ -5,11 +5,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="bg-neutral-800 w-full ">
-        <p>Productize Yourself</p>
-      </div>
 
-      <nav className="bg-[#0A2540] p-4  w-full">
+      <nav className="bg-[#0A2540] p-16 w-full">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
           Airbills Digital
@@ -19,6 +16,8 @@ export default function Home() {
           <Link href="/about" className="text-white hover:text-[#FF6F00]">About</Link>
           <Link href="/services" className="text-white hover:text-[#FF6F00]">Services</Link>
           <Link href="/contact" className="text-white hover:text-[#FF6F00]">Contact</Link>
+          
+          <button className='bg-custom-red text-sm px-4 py-2 rounded-full shadow hover:bg-accent-orange hover:text-white transition duration-300'>Connect TikTok</button>
         </div>
       </div>
     </nav>
@@ -29,8 +28,8 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-4">We build digital experiences that resonate</h1>
         <p className="mb-8">Lets create something amazing together.</p>
         <div className="flex justify-center space-x-4">
-          <a href="#start-project" className="bg-white text-dark-navy px-4 py-2 rounded shadow hover:bg-accent-orange hover:text-white transition duration-300">Start a Project</a>
-          <a href="#hire-talent" className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-accent-orange hover:border-accent-orange transition duration-300">Hire Talent</a>
+          <a href="#start-project" className="bg-custom-red text-sm px-4 py-2 rounded-full shadow hover:bg-accent-orange hover:text-white transition duration-300">Start a Project</a>
+          {/* <a href="#hire-talent" className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-accent-orange hover:border-accent-orange transition duration-300">Hire Talent</a> */}
         </div>
       </div>
     </section>
@@ -84,18 +83,12 @@ export default function Home() {
             <p className='mb-6'>Call us at <span className='text-custom-red'>+2348079454558</span></p>
             <p className='mb-6'>Send us an email at <span className='text-custom-red'>hello@airbills.xyz</span></p>
 
-            {/* Better yet, see us in person!
-We love our customers, so feel free to visit during normal business hours.
-
-
-Suite B8, 2XL Mall, Beside Zenith Bank, Und St. Gwarinpa 3rd Avenue.
-
-Abuja, Nigeria
-
-
-
-Send us an email at hello@airbills.xyz */}
+            <h3 className='mb-4 text-2xl mb-2'>Hours Open</h3>
+            <p className='mb-8'>Open Today <span className='text-custom-red'>09:00 to 17:00</span></p>
+            <button className='px-10 w-15 bg-custom-red p-3 rounded-full'>Drop Us a Line!</button>
           </div>
+
+          
          
           <div>
             <Image 
@@ -109,37 +102,51 @@ Send us an email at hello@airbills.xyz */}
       </div>
     </section>
 
+    <section className='bg-custom-red w-full p-20 '>
+      {/* Contact Us  */}
+      <div className='flex flex-col  justify-self-center'> 
+        <h2 className='text-2xl mb-12'>Connect With Us</h2>
 
-      <h1>Formula Airbills</h1>
-
-      <div>
-        <p>Nav Bar Section</p>
+        <div className='flex flex-row space-x-12'>
+          <p>1</p>
+          <p>1</p>
+          <p>1</p>
+          <p>1</p>
+          <p>1</p>
+          <p>1</p>
+        </div>
       </div>
-      
-      <div>
-        <p>Hero Section</p>
+    </section>
+
+
+    <section className='w-full p-20 bg-[#161616] mb-4'>
+      <div className='flex justify-center mb-8'>
+        <p className='w-15'>Subscribe</p>
+        <input className=' w-3/6 border-b-gray-50' type="email" name="ibrahim@airbills.xyz" id="newsletter" />
+        <button className='w-15 bg-custom-red p-3 rounded-full'>Sign Up</button>
+      </div>
+      <p className='text-center'>Get 10% off your first purchase when you sign up for our newsletter!</p>
+    </section>
+  
+
+    <section className='w-full flex justify-center mb-8 bg-[#161616]'>
+      <div className="border-b border-gray-100 w-4/5"></div>
+    </section>
+
+    <section className='w-full bg-[#161616] p-10'> 
+      <div className='flex justify-between px-12 mb-6'>
+        <p>ddgdggdg</p>
+        <p>fdfdf</p>
       </div>
 
-      <div>
-        <p>About Section</p>
-      </div>
-
-      <div>
-        <p>Success Stories Section</p>
-      </div>
-
-      <div>
-        <p>Contact Us Section</p>
-      </div>
-
-      <div>
-        <p>Connect with Us Section</p>
-      </div>
-
+      <div className="flex space-x-4 bg- justify-center">
+          <Link href="/" className="text-white hover:text-[#FF6F00]">Home</Link>
+          <Link href="/about" className="text-white hover:text-[#FF6F00]">About</Link>
+          <Link href="/services" className="text-white hover:text-[#FF6F00]">Services</Link>
+          <Link href="/contact" className="text-white hover:text-[#FF6F00]">Contact</Link>
+        </div>
+    </section>
     
-      <div>
-        <p>Footer Section</p>
-      </div>
 
     
 
